@@ -1,0 +1,12 @@
+version: '3'
+services:
+  crud-app-back-end:
+    image: "hajiyev86/crud-app-back-end:0.0.1"
+    container_name: crud-app-back-end
+    ports:
+      - "9090:9090"
+  crud-app-front-end:
+    image: "hajiyev86/crud-app-front-end:0.0.1"
+    container_name: crud-app-front-end
+    ports:
+      - "3000:3000"
