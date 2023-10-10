@@ -1,4 +1,5 @@
-#user-crud-app
+user-crud-app
+
 User management CRUD application, backend based on Kotlin and frontend on React.js.
 - User has name, email, age and a phone number. Required parameters to create a user are: name, email, phone number
 - User age should be received from the endpoint: https://api.agify.io/?name=?

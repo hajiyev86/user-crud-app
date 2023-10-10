@@ -1,11 +1,6 @@
 package com.example.crudkotlinapi.entity
 
-import jakarta.persistence.Column
-import jakarta.persistence.Entity
-import jakarta.persistence.GeneratedValue
-import jakarta.persistence.GenerationType
-import jakarta.persistence.Id
-import jakarta.persistence.Table
+import jakarta.persistence.*
 import java.time.LocalDateTime
 
 @Entity
@@ -23,5 +18,7 @@ data class User(
         @Column(name = "creation_date", nullable = false, updatable = false)
         val creationDate: LocalDateTime = LocalDateTime.now(),
         @Column(name = "modification_date")
-        var modificationDate: LocalDateTime? = null
+        var modificationDate: LocalDateTime? = null,
+        @Version
+        val version: Long = 0
 )
