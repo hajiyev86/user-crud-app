@@ -31,5 +31,5 @@ User management CRUD application, backend based on Kotlin and frontend on React.
 - Used react-router-dom for handling routing and navigation.
 - Used Validator for performing data validation
 - Used mui for ui componments 
-- React context, Docker, bootsrap 
+- React context, Docker, bootstrap 
 
