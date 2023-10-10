@@ -23,7 +23,7 @@ User management CRUD application, backend based on Kotlin and frontend on React.
 - To enhance resilience and fault tolerance, I used circuit breaker pattern using the @CircuitBreaker.
 - I added Search and Pagination functionality to filter, handle large datasets efficiently. 
 - I wrote some unit and integration tests to ensure that the service functions correctly, handles various scenarios, and meets the specified requirements.
-- Logging, localization, Docker
+- Logging, localization, Docker, Swagger (http://localhost:9090/swagger-ui/index.html) 
 
 <strong>frontend</strong>
 - Used Axios for making HTTP requests
