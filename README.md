@@ -1,7 +1,7 @@
 <h1>user-crud-app</h1>
 
 User management CRUD application, backend based on Kotlin and frontend on React.js.
-- User has name, email, age and a phone number. Required parameters to create a user are: name, email, phone number
+- User has name, email, age and a phone number. Required parhttps://github.com/hajiyev86/user-crud-app/tree/mainameters to create a user are: name, email, phone number
 - User age should be received from the endpoint: https://api.agify.io/?name=?
 
 <strong>Run application</strong>
@@ -9,12 +9,15 @@ User management CRUD application, backend based on Kotlin and frontend on React.
 2) ./gradlew build
 3) docker build -t hajiyev86/crud-app-back-end:0.0.1 .
 
-4) cd ../curd-react-app
+4) cd ../crud-react-app
 5) npm install
 6) npm run build
 7) docker build -t  hajiyev86/crud-app-front-end:0.0.1 .
 8) cd ..
 9) docker-compose up
+10) front: http://localhost:3000
+11) api: http://localhost:9090/api/user
+12) swagger: http://localhost:9090/swagger-ui/index.html
 
 <strong>backend</strong>
 - For backend used Spring-Data-JPA, used H2 database.
@@ -23,7 +26,7 @@ User management CRUD application, backend based on Kotlin and frontend on React.
 - To enhance resilience and fault tolerance, I used circuit breaker pattern using the @CircuitBreaker.
 - I added Search and Pagination functionality to filter, handle large datasets efficiently. 
 - I wrote some unit and integration tests to ensure that the service functions correctly, handles various scenarios, and meets the specified requirements.
-- Logging, localization, Docker, Swagger (http://localhost:9090/swagger-ui/index.html) 
+- Logging, Docker, Swagger, Localization 
 
 <strong>frontend</strong>
 - Used Axios for making HTTP requests
